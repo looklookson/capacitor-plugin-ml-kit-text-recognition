@@ -11,12 +11,14 @@ import android.graphics.Rect
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
+import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions
+
 
 @CapacitorPlugin
 class CapacitorPluginMlKitTextRecognition : Plugin() {
   @PluginMethod
   fun detectText(call: PluginCall) {
-    val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
+    val recognizer = TextRecognition.getClient(ChineseTextRecognizerOptions.Builder().build())
 
     val encodedImage = call.getString("base64Image")
     if (encodedImage == null) {

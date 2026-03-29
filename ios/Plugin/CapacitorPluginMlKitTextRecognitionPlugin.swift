@@ -2,6 +2,8 @@ import Foundation
 import Capacitor
 import MLKitVision
 import MLKitTextRecognition
+import GoogleMLKit
+
 /**
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
@@ -51,8 +53,12 @@ public class CapacitorPluginMlKitTextRecognitionPlugin: CAPPlugin, CAPBridgedPlu
             return
         }
 
-        let latinOptions = TextRecognizerOptions()
-        let textRecognizer = TextRecognizer.textRecognizer(options: latinOptions)
+        //let latinOptions = TextRecognizerOptions()
+        //let textRecognizer = TextRecognizer.textRecognizer(options: latinOptions)
+        // Use Chinese script recognition options
+        let chineseOptions = ChineseTextRecognizerOptions()
+        let textRecognizer = TextRecognizer.textRecognizer(options: chineseOptions)
+
         let visionImage = VisionImage(image: image)
         visionImage.orientation = visionImageOrientation(rotation: rotation)
 
