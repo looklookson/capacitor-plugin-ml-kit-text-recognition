@@ -3,7 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name = 'PantristCapacitorPluginMlKitTextRecognition'
+  s.name = 'CapacitorPluginMlKitTextRecognition'
   s.version = package['version']
   s.summary = package['description']
   s.license = package['license']
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target  = '15.0'
   s.dependency 'Capacitor'
   s.dependency 'GoogleMLKit/TextRecognition', '8.0.0'
+  s.dependency 'GoogleMLKit/TextRecognitionChinese', '>= 8.0.0'
   s.swift_version = '5.1'
   s.static_framework = true
 end
