@@ -2,7 +2,6 @@ import Foundation
 import Capacitor
 import MLKitVision
 import MLKitTextRecognition
-import GoogleMLKit
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
