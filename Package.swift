@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PantristCapacitorPluginMlKitTextRecognition",
+    name: "CapacitorPluginMlKitTextRecognition",
     platforms: [.iOS(.v15)],
     products: [
         .library(

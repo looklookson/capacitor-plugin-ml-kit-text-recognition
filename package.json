@@ -1,7 +1,7 @@
 {
-  "name": "@pantrist/capacitor-plugin-ml-kit-text-recognition",
+  "name": "@looklookson/capacitor-plugin-ml-kit-text-recognition",
   "version": "8.0.0",
-  "description": "Capacitor Wrapper for TextRecognition of Gogoles ML-Kit",
+  "description": "Capacitor Wrapper for Chinese TextRecognition of Gogoles ML-Kit",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "PantristCapacitorPluginMlKitTextRecognition.podspec"
+    "CapacitorPluginMlKitTextRecognition.podspec"
   ],
   "author": "Nico Lueg (nicolueg@gmx.de)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pantrist-dev/capacitor-plugin-ml-kit-text-recognition.git"
+    "url": "git+https://github.com/looklookson/capacitor-plugin-ml-kit-text-recognition.git"
   },
   "bugs": {
-    "url": "https://github.com/Pantrist-dev/capacitor-plugin-ml-kit-text-recognition/issues"
+    "url": "https://github.com/looklookson/capacitor-plugin-ml-kit-text-recognition/issues"
   },
   "keywords": [
     "capacitor",
